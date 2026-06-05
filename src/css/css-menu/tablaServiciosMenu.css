@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #f1e6ff;
+}
+
+th {
+    background-color: #641ed4;
+    color: white;
+}
+
+tr:hover {
+    background-color: #fdfbff;
+}
+
+.body-table-one { font-weight: bold; color: #641ed4; }
+.body-table-two { font-weight: bold; color: #9a54f7; }
+.body-table-three { font-weight: bold; color: #4b0783; }

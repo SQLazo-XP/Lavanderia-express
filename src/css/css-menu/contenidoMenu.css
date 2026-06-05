@@ -1,0 +1,31 @@
+.contenido-menu > section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    border: 1px solid #e3b2fa;
+}
+
+.contenido-menu > section h2 {
+    text-align: center;
+    color: #4b0783;
+    margin-bottom: 20px;
+}
+
+.contenido-menu > section article {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #e3b2fa;
+}
+
+.contenido-menu > section article:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.contenido-menu > section article h3 {
+    color: #641ed4;
+    margin-bottom: 5px;
+}
