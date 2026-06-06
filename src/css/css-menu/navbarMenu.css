@@ -1,20 +1,24 @@
 /* barra de navegacion */
 
 .navbar {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    background: linear-gradient(to right, #b8daf1,#9a54f7,#641ed4,#641ed4, #641ed4, #641ed4, #641ed4, #750abd); /* color del background rgb */
+    background: linear-gradient(to right, #cb65f3,#d3b2dd,#b06bdd,#984cd6, #9027f1, #8e1deb, #641ed4, #750abd); /* color del background rgb */
     padding: 10px 30px;
     width: 100%;
     margin: 0;
     box-sizing: border-box;
+    border: 1px solid #a407ff;
+    gap: 20px;
 }
 
 #logo {
-    width: 180px;
+    width: 200px;
     height: auto;
     display: block;
     margin-right: 50px;
+
 }
 
 .brand {
@@ -27,57 +31,47 @@
 }
 
 .nav-links {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     align-items: center;
     list-style: none;
-    gap: 15px;
+    gap: 3px;
     margin: 0;
     padding: 0 35px;
 }
 
 .nav-links li {
-    border-right: 1.9px solid rgb(72, 19, 170);
-    border-left: 1.9px solid rgb(72, 19, 170);
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    border-right: 2px solid rgb(197, 96, 236);
+    border-left: 2px solid rgb(197, 96, 236);
+    padding-right: 1px;
+    margin-right: 1px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 2px;
 }
+
+
 
 .nav-links a {
     color: white;
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 10px;
 }
 
 .nav-links a:hover {
-    color: #53e9e1; /* Corregido degradado inválido a color aqua sólido */
+    color: linear-gradient(to right, #53e9e1 #864ee0, #42daf5);
+    border-radius: 2px;
 }
-
 .nav-links li:hover {
-    background-color: #6c1cec;
+    color: #e5e7eb;
+    background-color: #cb8ae9;
+    border-radius: 4px;
 }
-@media (max-width:768px){
-
-    .navbar{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav-links{
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-    }
-
-    .brand{
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-
-    #logo{
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }

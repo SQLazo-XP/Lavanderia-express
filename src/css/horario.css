@@ -1,0 +1,138 @@
+/* Estilos específicos para la página de Horarios de Atención */
+
+.contenido-horario {
+    background: linear-gradient(to right,#a04cc7 ,#de98ff, #de98ff, #ca8fe5,#a04cc7); 
+    margin: auto;
+    padding: 40px 10px;
+}
+
+/* centrado de texto y color */
+.horario-hero {
+    text-align: center;
+    margin-bottom: 30px; 
+    color: #4b0783;
+}
+
+
+.horario-hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* hora de horario */
+.horario-hero p {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.horarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));  /*le da forma al contenido de horarios (agrupacion de las cartas de horario)*/
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.horario-card {
+    background-color: #fff;
+    padding: 35px 25px;
+    border-radius: 15px;
+    border: 2px solid #a527ff;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.horario-card:hover {
+    transform: scale(1.05); /* le da animacion a la tarjeta de horarios */
+    border-color: #bb86e0;
+}
+
+/* dia de la tarjeta del horario*/
+
+.horario-day {
+    font-size: 1.6em;
+    color: #4b0783; 
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.horario-time {
+    font-size: 1.3em;
+    color: #333333;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.horario-status {
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.status-open {
+    background-color: #e2fbe8;
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+}
+
+.status-limited {
+    background-color: #fff3cd;
+    color: #f39c12;
+    border: 1px solid #f39c12;
+}
+
+.status-closed {
+    background-color: #f8d7da;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.horario-notes {
+    max-width: 1000px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.note-box {
+    background: linear-gradient(to right,#d780ff ,#dca7f5, #e9c8f8, #e9c8f8,#e9c8f8,#dca7f5,#d780ff);
+    padding: 35px;
+    border-radius: 15px;
+    border: 2px solid #a527ff;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    color: #4b0783;
+}
+
+.note-box h3 {
+    margin-bottom: 15px;
+    color: #3b006c;
+    font-size: 1.4em;
+}
+
+.note-box p {
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .horarios-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .horario-notes {
+        grid-template-columns: 1fr;
+    }
+}

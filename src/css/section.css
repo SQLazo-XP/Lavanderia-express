@@ -1,0 +1,233 @@
+/*para que ocupe toda la pagina*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font-family por defecto, color de cuerpo, etc */
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #f8f6fc;
+    line-height: 1.6;
+}
+
+/* portada lavanderia */
+.hero {
+    background: linear-gradient(to right, #dfa1fc, #f3dffc, #f3dffc, #dfa1fc);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* titulo lavanderia*/
+.hero h1 {
+    font-size: 40px;
+    color: #4b0783;
+    margin-bottom: 10px;
+}
+
+.parrafo {
+    font-size: 18px;
+    color: #5b129c;
+    margin-bottom: 20px;
+}
+
+/* boton de solicitar retiro */
+.btn {
+    display: inline-block;
+    background-color: #d06dee;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 2px solid #a402f0;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #b55df3;
+}
+
+/* contenido del menu */
+.contenido-menu {
+    background: linear-gradient(to right, #a04cc7, #de98ff, #ca8fe5, #a04cc7);
+    padding: 40px 20px;
+}
+
+/* Estilo común para las secciones del menú */
+.contenido-menu section {
+    background-color: white;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Sección Sobre Nosotros (Mantiene su color especial) */
+.contenido-menu section.sect-sobre-nosotros {
+    background: linear-gradient(to right, #c45bf5, #d691f7, #e3b2fa, #d386f7, #c45bf5);
+    color: #4b0783;
+    text-align: center;
+}
+
+/* nuestros servicios */
+.servicios-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 30px auto;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* seccion nuestro servicio con fondo personalizado y color de texto*/
+.sec-N-servicios {
+    background: linear-gradient(to right, #d182ff, #e3b2fa, #d182ff) !important; /* Fuerza color */
+    color: #4b0783;
+    flex: 1;
+    min-width: 300px;
+}
+
+/* quita el estilo de de lista al contenido seccion */
+.sec-N-servicios ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+/* ajusta el espacio entre listas*/
+.sec-N-servicios li {
+    margin-bottom: 10px;
+}
+
+.bold-service-one,
+.bold-service-two {
+    color: #3b006c;
+}
+
+.NuestrosServicios {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    border: 3px solid white;
+}
+
+/* tarjetas de servicio */
+.sec-S-servicios {
+    background: linear-gradient(to right, #c45bf5, #d691f7, #e3b2fa, #d386f7, #c45bf5) !important;
+}
+
+.sec-S-servicios h2 {
+    color: #4b0783;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sec-S-servicios > div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sec-S-servicios article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #a527ff;
+    text-align: center;
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+/* ajusta el tamaño de las imagenes en servicios */
+.sec-S-servicios article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.article-three {
+    background-color: #ffffff ;
+}
+
+/* tabla de los precios */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 3px solid #8d0fe0;
+    background-color: #f5c1ff
+}
+
+th {
+    background-color: #641ed4;
+    color: rgb(249, 249, 250);
+}
+
+.body-table-one { font-weight: bold; color: #641ed4; }
+.body-table-two { font-weight: bold; color: #9a54f7; }
+.body-table-three { font-weight: bold; color: #4b0783; }
+
+/* testimonio de  los clientes */
+blockquote {
+    background-color: #fbf8ff;
+    border-left: 5px solid #9a54f7;
+    padding: 15px;
+    margin: 15px 0;
+    font-style: italic;
+    color: #4b0783;
+    border-radius: 0 8px 8px 0;
+}
+
+/* equipo de trabajo  */
+.contenido-menu section:last-of-type article {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #e3b2fa;
+}
+
+.contenido-menu section:last-of-type article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* para la ultima seccion de h3 */
+.contenido-menu section:last-of-type h3 {
+    color: #641ed4;
+    margin-bottom: 5px;
+}
+
+/* footer o pie de pagina */
+footer {
+    background-color: #4b0783;
+    color: #f3dffc;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* parrafo de footer */
+footer p {
+    margin-bottom: 10px;
+}
+
+/* color para direccion redes sociales en celeste en footer */
+footer a {
+    color: #53e9e1;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* cambiar color de direccion redes sociales a blanco en footer */
+footer a:hover {
+    color: white;
+}

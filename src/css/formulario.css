@@ -1,19 +1,76 @@
+/* Estilo para la sección de Contacto y el Formulario */
+
 #contacto {
-    padding: 40px;
+    background-color: white;
+    max-width: 650px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #a527ff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    font-family: Arial, sans-serif;
+}
+
+#contacto h2 {
+    color: #4b0783;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+#contacto p {
+    color: #5b129c;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 16px;
 }
 
 #formulario {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+}
+
+#formulario label {
+    color: #4b0783;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: -5px;
 }
 
 #formulario input,
 #formulario textarea {
-    padding: 10px;
+    padding: 12px 15px;
+    border: 2px solid #e3b2fa;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#formulario input:focus,
+#formulario textarea:focus {
+    border-color: #a527ff;
+    box-shadow: 0 0 8px rgba(165, 39, 255, 0.25);
 }
 
 #formulario button {
-    padding: 12px;
+    background-color: #d06dee;
+    color: white;
+    border: 2px solid #a402f0;
+    border-radius: 30px;
+    padding: 12px 35px;
+    font-weight: bold;
+    font-size: 16px;
     cursor: pointer;
+    align-self: center;
+    margin-top: 10px;
+    transition: transform 0.2s ease, background-color 0.2s ease;  /*le da fluides a la animacion del boton*/
+}
+
+#formulario button:hover {
+    background-color: #b55df3;
+    transform: scale(1.05);
 }
