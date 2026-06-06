@@ -67,7 +67,7 @@ body {
 
 /* Sección Sobre Nosotros (Mantiene su color especial) */
 .contenido-menu section.sect-sobre-nosotros {
-    background: linear-gradient(to right, #c45bf5, #d691f7, #e3b2fa, #d386f7, #c45bf5);
+    background: linear-gradient(to right, #bf66f3,#e6cef1,#e6cef1, #e6cef1, #e6cef1,#e6cef1);
     color: #4b0783;
     text-align: center;
 }
@@ -85,7 +85,7 @@ body {
 
 /* seccion nuestro servicio con fondo personalizado y color de texto*/
 .sec-N-servicios {
-    background: linear-gradient(to right, #d182ff, #e3b2fa, #d182ff) !important; /* Fuerza color */
+    background: linear-gradient(to right, #bf66f3,#e6cef1,#e6cef1, #e6cef1, #e6cef1,#e6cef1) ; 
     color: #4b0783;
     flex: 1;
     min-width: 300px;
@@ -111,7 +111,7 @@ body {
     width: 100%;
     max-width: 350px;
     border-radius: 12px;
-    border: 3px solid white;
+    border: 5px solid rgb(133, 16, 241);
 }
 
 /* tarjetas de servicio */
@@ -133,7 +133,7 @@ body {
 }
 
 .sec-S-servicios article {
-    background-color: white;
+    background-color: rgb(242, 208, 255);
     padding: 20px;
     border-radius: 10px;
     border: 2px solid #a527ff;
